@@ -1,0 +1,19 @@
+.contenedor {
+  display: flex;
+ /*  height: 87%; */
+  /* Establecemos la altura del componente al 100% del viewport */
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+
+
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .contenedor {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}

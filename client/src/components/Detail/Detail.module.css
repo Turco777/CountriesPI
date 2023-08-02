@@ -1,0 +1,101 @@
+.navegacion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.navegacion img {
+  border-radius: 5%;
+  width: 3em;
+  position: absolute;
+  right: 3em;
+}
+
+.navegacion button {
+  position: absolute;
+  left: 2em;
+  top: 3.2em;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 0.7em;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: rgba(50, 73, 115, 0.5);
+}
+
+.izquierda {
+  width: 40%;
+  border-radius: 10%;
+  height: fit-content;
+}
+
+.izquierda h3 {
+  margin-top: 6%;
+}
+
+.derecha {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  width: 50%;
+}
+
+.derecha img {
+  max-width: fit-content;
+  margin: auto 5% auto 5%;
+  width: 70%;
+}
+
+.name {
+  color: rgb(181, 184, 17);
+}
+
+/* .activities {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.activities h2 {
+  color: rgb(165, 157, 42);
+} */
+
+
+contenedor {
+  /* Estilos generales para el contenedor */
+
+  /* Estilos específicos para pantallas con ancho menor a 900px */
+  @media screen and (max-width: 900px) {
+    flex-direction: column; /* Cambiar a diseño de columna */
+    align-items: center; /* Centrar contenido horizontalmente */
+  }
+}
+
+.izquierda {
+  /* Estilos generales para la izquierda */
+
+  /* Estilos específicos para pantallas con ancho menor a 900px */
+  @media screen and (max-width: 900px) {
+    width: 80%; /* Ajustar el ancho */
+  }
+}
+
+.derecha {
+  /* Estilos generales para la derecha */
+
+  /* Estilos específicos para pantallas con ancho menor a 900px */
+  @media screen and (max-width: 900px) {
+    width: 80%; /* Ajustar el ancho */
+    margin-top: 2%; /* Ajustar el margen superior */
+    margin-bottom: 2%; /* Ajustar el margen inferior */
+  }
+}
+
+/* ... Otros estilos ... */

@@ -1,0 +1,108 @@
+.home {
+  position: relative;
+  height: 100vh; /* Establecemos la altura del componente al 100% del viewport */
+  width: 100%; /* Establecemos el ancho del componente al 100% */
+}
+
+.input {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.create {
+  position: absolute;
+  top: 0.8em;
+  right: 2em;
+  width: fit-content;
+}
+.backNext {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto auto auto;
+  width: fit-content;
+}
+.backNext button {
+  margin-right: 1em;
+}
+
+.selectores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 3.5em;
+}
+
+.order_filter {
+  overflow-wrap: break-word;
+  font-size: 12px;
+  background-color: rgb(37, 46, 103);
+  border-radius: 10px;
+  border: none;
+  width: 17em;
+  padding: 0.5em;
+}
+.order_filter h4 {
+  color: rgb(126, 148, 199);
+  margin: 0.1em;
+}
+.order_filter select {
+  background-color: rgba(165, 182, 199, 0.6);
+  border: 2px solid;
+  border-color: rgb(37, 45, 103);
+  color: rgb(32, 55, 84);
+  margin-top: 0.4em;
+  border-radius: 5px;
+  padding: 0.2em;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+.order_filter select:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(165, 180, 199, 0.6);
+  border: 2px solid;
+  border-color: rgb(35, 70, 119);
+}
+
+.order_filter option {
+  background-color: rgb(126, 150, 199);
+}
+.order_filter option:hover {
+  background-color: rgba(165, 177, 199, 0.6);
+}
+
+.paginatecontainer {
+  position: relative;
+  margin-top: 70px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .home {
+    flex-direction: column; /* Cambia a diseño de columna */
+  }
+
+  .selectores {
+    flex-direction: column; /* Cambia a diseño de columna */
+    align-items: center; /* Centra los selectores */
+  }
+
+  .order_filter {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 1em;
+  }
+
+  .create {
+    margin: 0.5em 0; /* Ajusta el margen superior e inferior */
+  }
+  
+  
+.paginatecontainer {
+  position: relative;
+  margin-top: 100px;
+}
+}
+
+/* ... (Otros estilos si los tienes) */

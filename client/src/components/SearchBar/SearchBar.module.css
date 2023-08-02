@@ -1,0 +1,21 @@
+.input {
+  padding: 10px;
+  color: black;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 1em;
+  }
+
+  .searchButton {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}

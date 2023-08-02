@@ -1,0 +1,67 @@
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3em 3.5em;
+}
+
+.orderFilter {
+  overflow-wrap: break-word;
+  font-size: 15px;
+  background-color: rgb(37, 46, 103);
+  border-radius: 10px;
+  border: none;
+  width: 17em;
+}
+
+.orderFilter h4 {
+  color: rgb(126, 148, 199);
+  margin: 0.1em;
+}
+
+.orderFilter select {
+  background-color: rgba(165, 182, 199, 0.6);
+  border: 2px solid;
+  border-color: rgb(37, 45, 103);
+  color: rgb(32, 55, 84);
+  margin-top: 0.4em;
+  border-radius: 5px;
+  padding: 0.2em;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.orderFilter select:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(165, 180, 199, 0.6);
+  border: 2px solid;
+  border-color: rgb(35, 70, 119);
+}
+
+.orderFilter option {
+  background-color: rgb(126, 150, 199);
+}
+
+.orderFilter option:hover {
+  background-color: rgba(165, 177, 199, 0.6);
+}
+
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .filters {
+    flex-direction: column; /* Cambia a diseño de columna */
+    align-items: center; /* Centra los filtros */
+    margin-bottom: 1em;
+  }
+
+  .orderFilter {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 1em;
+  }
+
+  .resetButton {
+    margin-top: 1em; /* Ajusta el margen superior */
+  }
+}

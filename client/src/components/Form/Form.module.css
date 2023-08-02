@@ -1,0 +1,139 @@
+.principal {
+  position: relative;
+  background-color: rgba(50, 73, 115, 0.5);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.principal a {
+  position: absolute;
+  left: 3em;
+  top: 1em;
+}
+
+.form {
+  border: none;
+  background-color: rgb(37, 46, 103);
+  opacity: 85%;
+  width: 50%;
+  margin: 2em auto auto auto;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.fieldset {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  grid-template-rows: auto auto;
+  column-gap: 1em;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.form label {
+  font-weight: bold;
+  margin: auto 1em 1em auto;
+  text-align: left;
+  color: rgb(126, 151, 199);
+  font-size: 15px;
+}
+
+.inputs input {
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-left: 1em;
+  min-width: 20em;
+  background-color: rgba(165, 179, 199, 0.6);
+}
+
+.inputs ::placeholder {
+  color: rgb(234, 241, 255);
+}
+
+.inputs select {
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  /* color: rgb(199, 172, 126); */
+  background-color: rgba(165, 181, 199, 0.6);
+}
+
+.countries_selected p {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(126, 147, 199);
+}
+
+.error {
+  font-size: 10px;
+  height: 20px;
+  overflow: hidden;
+  text-align: left;
+  margin: 0 auto 0 2em;
+  font-style: italic;
+}
+
+.error p {
+  color: rgb(241, 140, 140);
+}
+
+button.disable {
+  opacity: 0.5;
+  /* Por ejemplo, reduce la opacidad del botón */
+  cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+  .form {
+    width: 75%;
+    
+  }
+
+  .buttons {
+    width: 70%;
+    align-items: center;
+    font-size: 85%;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .fieldset {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .inputs {
+    margin-bottom: 10px;
+  }
+
+  .inputs input {
+    width: 80%;
+    margin-left: 0;
+    min-width: none;
+  }
+
+  .inputs select {
+    width: 90%;
+  }
+
+  .countries_selected p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .error {
+    font-size: 12px;
+    text-align: justify;
+    padding-top: 15px;
+  }
+}
